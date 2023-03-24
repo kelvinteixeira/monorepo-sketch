@@ -2,9 +2,7 @@
 
 ## Sobre o projeto:
 
-Esbboço de monorepositorio React + Node
-
-#### <div align="right">- Projeto Finalizado 🟢 <div>
+Esboço de monorepositorio React + Node para facilitar a criação de projetos futuros.
 
 ## Tecnologias usadas:
 
