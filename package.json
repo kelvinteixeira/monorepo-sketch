@@ -1,0 +1,16 @@
+{
+  "name": "monorepo",
+  "repository": "https://github.com/kelvinteixeira/Monorepo-sketch",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:backend": "yarn workspace @monorepo/server start",
+    "start:frontend": "yarn workspace @monorepo/web start"
+  },
+  "author": "Kelvin Teixeira Santos",
+  "license": "ISC",
+  "private": true,
+  "workspaces": {
+    "packages": ["packages/*"]
+  }
+}
