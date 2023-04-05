@@ -4,13 +4,25 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start:backend": "yarn workspace @monorepo/server start",
-    "start:frontend": "yarn workspace @monorepo/web start"
+    "start:server": "yarn workspace @monorepo/server start",
+    "start:frontend": "yarn workspace @monorepo/web start",
+    "lint": "yarn workspaces run lint",
+    "prepare": "husky install"
   },
   "author": "Kelvin Teixeira Santos",
   "license": "ISC",
   "private": true,
   "workspaces": {
-    "packages": ["packages/*"]
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo 'Make a clean code'"
+    }
   }
 }
