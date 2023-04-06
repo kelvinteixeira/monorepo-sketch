@@ -6,7 +6,7 @@
   "scripts": {
     "start:server": "yarn workspace @monorepo/server start",
     "start:frontend": "yarn workspace @monorepo/web start",
-    "lint": "yarn workspaces run lint",
+    "lint": "yarn workspace @monorepo/web run lint",
     "prepare": "husky install"
   },
   "author": "Kelvin Teixeira Santos",
@@ -19,10 +19,5 @@
   },
   "devDependencies": {
     "husky": "^8.0.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo 'Make a clean code'"
-    }
   }
 }
