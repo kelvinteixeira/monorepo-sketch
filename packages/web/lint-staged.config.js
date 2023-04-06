@@ -1,5 +1,5 @@
 module.exports = {
   '*.ts': [
-    'eslint --fix'
+    'eslint --ext .ts --ext .tsx'
   ],
 };
