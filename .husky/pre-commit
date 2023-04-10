@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn workspace @monorepo/web precommit
-yarn workspace @monorepo/server precommit
+yarn workspaces run precommit
