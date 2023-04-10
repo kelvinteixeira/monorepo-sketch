@@ -4,5 +4,4 @@ module.exports = {
     () => 'tsc -p tsconfig.json --pretty --noEmit',
     'yarn test --findRelatedTests --passWithNoTests --bail',
   ],
-  '*.{js,jsx,ts,tsx,json}': ['prettier --write'],
 };

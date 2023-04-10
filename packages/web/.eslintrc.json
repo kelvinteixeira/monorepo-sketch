@@ -7,7 +7,7 @@
   "extends": [
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "airbnb",
+    "airbnb-base",
     "prettier",
     "plugin:prettier/recommended"
   ],
@@ -27,15 +27,21 @@
     "unused-imports",
     "prettier"
   ],
-  "ignorePatterns": ["**/node_modules/*"],
+  "ignorePatterns": [
+    "**/node_modules/*"
+  ],
   "rules": {
+    "eslint-disable import/no-unresolved": "off",
+    "eslint-disable import/extensions": "off",
     "camelcase": "off",
     "import/no-unresolved": "error",
     "@typescript-eslint/naming-convention": [
       "error",
       {
         "selector": "default",
-        "format": ["camelCase"],
+        "format": [
+          "camelCase"
+        ],
         "leadingUnderscore": "allowSingleOrDouble",
         "trailingUnderscore": "allowSingleOrDouble"
       },
@@ -47,26 +53,43 @@
           "objectLiteralProperty",
           "parameter"
         ],
-        "format": ["camelCase", "PascalCase", "UPPER_CASE"],
+        "format": [
+          "camelCase",
+          "PascalCase",
+          "UPPER_CASE"
+        ],
         "leadingUnderscore": "allowSingleOrDouble",
         "trailingUnderscore": "allowSingleOrDouble"
       },
       {
         "selector": "typeLike",
-        "format": ["PascalCase"]
+        "format": [
+          "PascalCase"
+        ]
       },
       {
         "selector": "enum",
-        "format": ["PascalCase", "UPPER_CASE"]
+        "format": [
+          "PascalCase",
+          "UPPER_CASE"
+        ]
       },
       {
         "selector": "function",
-        "format": ["camelCase", "PascalCase"]
+        "format": [
+          "camelCase",
+          "PascalCase"
+        ]
       },
       {
-        "selector": ["objectLiteralProperty", "typeProperty"],
+        "selector": [
+          "objectLiteralProperty",
+          "typeProperty"
+        ],
         "format": null,
-        "modifiers": ["requiresQuotes"]
+        "modifiers": [
+          "requiresQuotes"
+        ]
       }
     ],
     "react/function-component-definition": [
@@ -101,7 +124,9 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["test/**"],
+        "devDependencies": [
+          "test/**"
+        ],
         "optionalDependencies": false,
         "peerDependencies": false
       }
@@ -115,7 +140,10 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".jsx", ".tsx"]
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
       }
     ],
     "no-use-before-define": "off",
@@ -130,7 +158,9 @@
   },
   "overrides": [
     {
-      "files": ["*stories.tsx"],
+      "files": [
+        "*stories.tsx"
+      ],
       "rules": {
         "react/function-component-definition": "off",
         "react/destructuring-assignment": "off"

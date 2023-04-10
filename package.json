@@ -6,6 +6,7 @@
   "scripts": {
     "start:server": "yarn workspace @monorepo/server start",
     "start:frontend": "yarn workspace @monorepo/web start",
+    "test:frontend": "yarn workspace @monorepo/web test",
     "lint": "yarn workspaces run lint",
     "prepare": "husky install"
   },
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^17.0.2",
     "husky": "^8.0.3"
   }
 }
