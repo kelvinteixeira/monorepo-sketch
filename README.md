@@ -6,11 +6,19 @@ Esboço de monorepositorio React + Node para facilitar a criação de projetos f
 
 ## Tecnologias usadas:
 
-- React
-- Typescript
+- React 
 - Vite
+- Typescript
 - Node
 - Fastify
+- Prisma 
+- SqLite
+- Eslint 
+- Prettier
+- Husky
+- Lint-staged
+- CommitLint 
+- Jest
 
 #### <div align="center">Aplicação desenvolvida por mim. Gostou? tem alguma sugestão de melhoria? por favor, entre em contato e ja me adiciona. :D
 
